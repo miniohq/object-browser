@@ -107,7 +107,7 @@ const ListBuckets = () => {
               <Box
                 sx={{
                   display: "block",
-                  height: "calc(100vh - 380px)",
+                  height: "calc(100vh - 302px)",
                   "& .bucketsListing": {
                     "&::-webkit-scrollbar": {
                       width: 5,

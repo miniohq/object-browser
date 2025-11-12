@@ -1,4 +1,4 @@
-# MinIO Console
+# MinIO Object Browser for Enterprise
 
 ![build](https://github.com/minio/object-browser/actions/workflows/jobs.yaml/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
 
@@ -26,7 +26,7 @@ A graphical user interface for [MinIO](https://github.com/minio/minio)
 
 <!-- markdown-toc end -->
 
-MinIO Console is a library that provides a management and browser UI overlay for the MinIO Server.
+MinIO Object Browser for Enterprise is a library that provides a full object browser UI for the MinIO Server Hot Fixes.
 
 ## Setup
 

@@ -140,12 +140,3 @@ export const LICENSE_PLANS_INFORMATION: LicensePlanOption[] = [
     planDescription: "",
   },
 ];
-
-const LICENSE_CONSENT_STORE_KEY = "agpl_minio_license_consent";
-export const setLicenseConsent = () => {
-  localStorage.setItem(LICENSE_CONSENT_STORE_KEY, "true");
-};
-
-export const getLicenseConsent = () => {
-  return localStorage.getItem(LICENSE_CONSENT_STORE_KEY) === "true";
-};
