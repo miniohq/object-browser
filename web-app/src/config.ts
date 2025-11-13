@@ -16,13 +16,6 @@
 
 import { ApplicationLogoProps } from "mds";
 
-const MinIOPlan =
-  (
-    document.head.querySelector(
-      "[name~=minio-license][content]",
-    ) as HTMLMetaElement
-  )?.content || "AGPL";
-
 type LogoVar =
   | "AGPL"
   | "simple"
@@ -34,34 +27,10 @@ type LogoVar =
   | undefined;
 
 export const getLogoVar = (): LogoVar => {
-  let logoVar: LogoVar = "AGPL";
-  switch (MinIOPlan.toLowerCase()) {
-    case "enterprise-lite":
-      logoVar = "enterpriseos";
-      break;
-    case "enterprise-plus":
-      logoVar = "enterpriseos";
-      break;
-    case "enterprise":
-      logoVar = "enterprise";
-      break;
-    case "standard":
-      logoVar = "standard";
-      break;
-    default:
-      logoVar = "AGPL";
-      break;
-  }
-  return logoVar;
+  return "enterpriseos";
 };
 
 export const getLogoApplicationVariant =
   (): ApplicationLogoProps["applicationName"] => {
-    switch (MinIOPlan.toLowerCase()) {
-      case "enterprise-lite":
-      case "enterprise-plus":
-        return "minio";
-      default:
-        return "console";
-    }
+    return "minio";
   };

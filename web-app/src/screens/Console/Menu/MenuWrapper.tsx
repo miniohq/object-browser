@@ -16,15 +16,13 @@
 
 import React, { Fragment } from "react";
 import { useSelector } from "react-redux";
-import { AddIcon, DocumentationIcon, LicenseIcon, Menu, MenuItem } from "mds";
+import { AddIcon, DocumentationIcon, Menu, MenuItem } from "mds";
 import { AppState, useAppDispatch } from "../../../store";
 import { menuOpen } from "../../../systemSlice";
 import { getLogoApplicationVariant, getLogoVar } from "../../../config";
 import { useLocation, useNavigate } from "react-router-dom";
-import { IAM_PAGES } from "../../../common/SecureComponent/permissions";
 import { setAddBucketOpen } from "../Buckets/ListBuckets/AddBucket/addBucketsSlice";
 import BucketsListing from "./Listing/BucketsListing";
-import { getLicenseConsent } from "../License/utils";
 
 const MenuWrapper = () => {
   const dispatch = useAppDispatch();
@@ -62,13 +60,6 @@ const MenuWrapper = () => {
             path={
               "https://docs.min.io/community/minio-object-store/index.html?ref=con"
             }
-          />
-          <MenuItem
-            name={"License"}
-            icon={<LicenseIcon />}
-            path={IAM_PAGES.LICENSE}
-            onClick={() => navigate(IAM_PAGES.LICENSE)}
-            badge={!getLicenseConsent()}
           />
         </Fragment>
       }
