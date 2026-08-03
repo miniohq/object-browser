@@ -1,8 +1,8 @@
 module github.com/minio/console
 
-go 1.25.0
+go 1.25.5
 
-toolchain go1.25.9
+toolchain go1.26.5
 
 require (
 	github.com/blang/semver/v4 v4.0.0
