@@ -14796,7 +14796,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.3.1":
+"react@npm:^18.3.1":
   version: 18.3.1
   resolution: "react@npm:18.3.1"
   dependencies:
@@ -18106,7 +18106,7 @@ __metadata:
     minio: "npm:^8.0.7"
     nyc: "npm:^15.1.0"
     prettier: "npm:3.8.3"
-    react: "npm:18.3.1"
+    react: "npm:^18.3.1"
     react-app-rewire-hot-loader: "npm:^2.0.1"
     react-app-rewired: "npm:^2.2.1"
     react-copy-to-clipboard: "npm:^5.1.1"
